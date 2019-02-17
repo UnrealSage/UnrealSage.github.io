@@ -5,14 +5,22 @@
   
   <title>搭建博客-LeanCloud文章统计 | UnrealSage&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="博客功能扩展-&amp;gt;统计文章的阅读次数。使用LeanCloud进行统计。">
+<meta name="keywords" content="Hexo,Blog">
+<meta property="og:type" content="article">
 <meta property="og:title" content="搭建博客-LeanCloud文章统计">
 <meta property="og:url" content="http://yoursite.com/2019/02/17/搭建博客-LeanCloud文章统计/index.html">
 <meta property="og:site_name" content="UnrealSage&#39;s Blog">
+<meta property="og:description" content="博客功能扩展-&amp;gt;统计文章的阅读次数。使用LeanCloud进行统计。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-17T11:42:22.000Z">
+<meta property="og:image" content="http://yoursite.com/2019/02/17/搭建博客-LeanCloud文章统计/LeanCloud_1.png">
+<meta property="og:image" content="http://yoursite.com/2019/02/17/搭建博客-LeanCloud文章统计/LeanCloud_2.png">
+<meta property="og:image" content="http://yoursite.com/2019/02/17/搭建博客-LeanCloud文章统计/LeanCloud_3.png">
+<meta property="og:updated_time" content="2019-02-17T12:55:06.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建博客-LeanCloud文章统计">
+<meta name="twitter:description" content="博客功能扩展-&amp;gt;统计文章的阅读次数。使用LeanCloud进行统计。">
+<meta name="twitter:image" content="http://yoursite.com/2019/02/17/搭建博客-LeanCloud文章统计/LeanCloud_1.png">
   
     <link rel="alternate" href="/atom.xml" title="UnrealSage&#39;s Blog" type="application/atom+xml">
   
@@ -41,7 +49,7 @@
     <div class="count-box">
       <a href="/archives"><div><strong>4</strong><br>文章</div></a>
       <a href="/categories"><div><strong>2</strong><br>分类</div></a>
-      <a href="/tags"><div><strong>3</strong><br>标签</div></a>
+      <a href="/tags"><div><strong>4</strong><br>标签</div></a>
     </div>
     <ul class="blog-link">
      
@@ -88,6 +96,10 @@
 
         <div>
           
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Blog/">Blog</a>
+  </div>
+
           
               
   &nbsp; | &nbsp;
@@ -104,13 +116,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
+        <p>博客功能扩展-&gt;统计文章的阅读次数。<br>使用LeanCloud进行统计。<br><a id="more"></a></p>
+<h1 id="LeanCloud部署"><a href="#LeanCloud部署" class="headerlink" title="LeanCloud部署"></a>LeanCloud部署</h1><p>登陆LeanCloud控制台（可以使用github绑定登陆）,创建应用<br><img src="/2019/02/17/搭建博客-LeanCloud文章统计/LeanCloud_1.png" alt="应用"></p>
+<ul>
+<li>创建完成后，点击存储，新建Class，Class名称必须为Counter。<br><img src="/2019/02/17/搭建博客-LeanCloud文章统计/LeanCloud_2.png" alt="Class"></li>
+</ul>
+<h1 id="Blog部署"><a href="#Blog部署" class="headerlink" title="Blog部署"></a>Blog部署</h1><p>打开主题的配置文件_config.yml，修改配置</p>
+<pre><code>leancloud_visitors:
+  enable: true
+  app_id:
+  app_key:
+</code></pre><p>app_id与app_key从LeanCloud-设置-应用Key取，截图如下<br><img src="/2019/02/17/搭建博客-LeanCloud文章统计/LeanCloud_3.png" alt="app_id与app_key"></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/02/17/搭建博客-LeanCloud文章统计/" data-id="cjs8w2fhe0007mct2yjl0mvcc" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2019/02/17/搭建博客-LeanCloud文章统计/" data-id="cjs8wzeqh0007xot2hptmpkbb" class="article-share-link">分享</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Blog/">Blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
     </footer>
   </div>
   
@@ -171,7 +196,7 @@
     <div class="count-box">
       <a href="/archives"><div><strong>4</strong><br>文章</div></a>
       <a href="/categories"><div><strong>2</strong><br>分类</div></a>
-      <a href="/tags"><div><strong>3</strong><br>标签</div></a>
+      <a href="/tags"><div><strong>4</strong><br>标签</div></a>
     </div>
 
 
